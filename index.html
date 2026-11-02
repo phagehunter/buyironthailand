@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="pageTitle">ไพโรจน์ค้าเหล็กเก่า - Secondhand Steel & Construction</title>
+  
+  <!-- Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;600;700&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo" data-i18n="shopName">ไพโรจน์ค้าเหล็กเก่า</div>
+      <span class="sub-logo" data-i18n="subTitle">สังขละบุรี กาญจนบุรี</span>
+    </div>
+    
+    <!-- Language Switcher ordered: Thai -> Burmese -> English -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="switchLanguage('th')">🇹🇭 TH</button>
+      <button class="lang-btn" onclick="switchLanguage('my')">🇲🇲 MY</button>
+      <button class="lang-btn" onclick="switchLanguage('en')">🇬🇧 EN</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div class="badge" data-i18n="category">ร้านขายวัสดุก่อสร้างและรับซื้อเศษเหล็ก</div>
+      <h1 data-i18n="shopName">ไพโรจน์ค้าเหล็กเก่า</h1>
+      <p class="tagline" data-i18n="tagline">รับซื้อ-ขาย เศษเหล็ก เหล็กใหม่ เกรด A/B และอุปกรณ์ก่อสร้างให้เช่า</p>
+
+      <div class="cta-buttons">
+        <a href="tel:0879853774" class="btn btn-primary">
+          <span class="icon">📞</span> <span data-i18n="callUs">โทร 087-985-3774</span>
+        </a>
+        <a href="https://maps.app.goo.gl/bcKZmhUSavGA6iqq9" target="_blank" rel="noopener" class="btn btn-secondary">
+          <span class="icon">🗺️</span> <span data-i18n="getDirections">เปิด Google Maps</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <div class="info-card highlight-card">
+        <h3 data-i18n="hoursTitle">🕒 เวลาทำการ</h3>
+        <p class="status-open" data-i18n="hoursValue">เปิดให้บริการ 24 ชั่วโมง</p>
+      </div>
+
+      <div class="info-card">
+        <h3 data-i18n="addressTitle">📍 ที่อยู่ร้าน</h3>
+        <p data-i18n="addressValue">หมู่บ้าน บ้านใหม่น้ำ, เลขที่ 448, ต.หนองลู อ.สังขละบุรี จ.กาญจนบุรี 71240</p>
+        <a href="https://maps.app.goo.gl/bcKZmhUSavGA6iqq9" target="_blank" rel="noopener" class="map-link" data-i18n="viewMap">ดูแผนที่บน Google Maps $\rightarrow$</a>
+      </div>
+
+      <div class="info-card">
+        <h3 data-i18n="servicesTitle">🛠️ สินค้าและบริการ</h3>
+        <ul>
+          <li data-i18n="service1">✓ รับซื้อเศษเหล็ก และขายเศษเหล็กราคาดี</li>
+          <li data-i18n="service2">✓ ขายเหล็กใหม่ เกรด A และ เกรด B</li>
+          <li data-i18n="service3">✓ อุปกรณ์ก่อสร้าง และเครื่องมือช่างให้เช่า</li>
+          <li data-i18n="service4">✓ บริการจัดส่งในพื้นที่สังขละบุรีและพื้นที่ใกล้เคียง</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Floating Action Bar for conversion -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:0879853774" class="sticky-btn call">
+      <span>📞</span> <span data-i18n="callShort">โทรทันที</span>
+    </a>
+    <a href="https://maps.app.goo.gl/bcKZmhUSavGA6iqq9" target="_blank" rel="noopener" class="sticky-btn map">
+      <span>📍</span> <span data-i18n="mapShort">แผนที่ร้าน</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> <span data-i18n="shopName">ไพโรจน์ค้าเหล็กเก่า</span>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
