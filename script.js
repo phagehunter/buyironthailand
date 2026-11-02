@@ -91,7 +91,6 @@ function switchLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   
-  // Default language is Thai ('th'), falls back to stored preference
   const savedLang = localStorage.getItem('selectedLang') || 'th';
   switchLanguage(savedLang);
 });
